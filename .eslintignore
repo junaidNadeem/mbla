@@ -1,0 +1,13 @@
+configs/*
+out/*
+node_modules/*
+.next/*
+.eslintrc.js
+yarn.lock
+package.json
+express.js
+tsconfig.json
+tsconfig.server.json
+next.config.js
+firebase.json
+package-lock.json

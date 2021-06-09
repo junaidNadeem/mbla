@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'MatahariBold';
+  src: url('/font/Matahari/Matahari-800ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: 'Matahari';
+  src: url('/font/Matahari/Matahari-400Regular.ttf');
+}
+
+html {
+  height: 100vh;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  padding: 0;
+  font-family: 'Matahari';
+}
+sup {
+  font-size: '58%';
+  font-weight: 600;
+}
+// ul {
+//   -moz-column-count: 2;
+//   -webkit-column-count: 2;
+//   column-count: 2;
+// }
+
+.test:parent {
+  column-count: 2;
+}
+
+.slick-dots li button:before {
+  font-size: 12px !important;
+  color: #ff7e64 !important;
+}
