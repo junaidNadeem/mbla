@@ -20,7 +20,7 @@ const MyApp = (props) => {
     <AllAppWrapper>
       <Head>
         <title>MBLA</title>
-        <link rel="preload" href="/font/Matahari/Matahari-400Regular.ttf" as="font" crossOrigin="" />
+        <link rel="preload" href="/font/Matahari/MBLAFonts.ttf" as="font" crossOrigin="" />
       </Head>
       <ThemeProvider theme={getTheme()}>
         <CssBaseline />

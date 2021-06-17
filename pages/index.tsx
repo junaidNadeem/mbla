@@ -1,8 +1,9 @@
 import React from 'react'
 import { hot } from 'react-hot-loader'
+import { useMediaQuery } from 'react-responsive'
 
 // material ui imports
-import { Box, Divider, Grid, Typography, styled } from '@material-ui/core'
+import { Box, Divider, Grid, Typography, styled, makeStyles } from '@material-ui/core'
 import CallIcon from '@material-ui/icons/Call'
 import PinDropIcon from '@material-ui/icons/PinDrop'
 import EmailIcon from '@material-ui/icons/Email'
@@ -14,7 +15,7 @@ const WaterMarkBox = styled(Box)({
   left: '7.5vw',
   top: 0,
   bottom: 2,
-  opacity: 0.3,
+  opacity: 0.1,
   width: '80vw',
   height: 'auto'
 })
@@ -26,6 +27,22 @@ const MainBox = styled(Box)({
 })
 
 const landingPage: React.FC = () => {
+  const isMobile = useMediaQuery({ query: '(max-width: 800px)' })
+
+  const classes = makeStyles(() => {
+    return {
+      contentTypo: {
+        height: isMobile ? 'auto' : '300px'
+      },
+      visionTypo: {
+        height: isMobile ? 'auto' : '150px'
+      },
+      civilTypo: {
+        height: isMobile ? 'auto' : '400px'
+      }
+    }
+  })()
+
   return (
     <React.Fragment>
       <Box>
@@ -33,10 +50,12 @@ const landingPage: React.FC = () => {
       </Box>
       <Box p={'40px'} display="flex" mt={8} flexDirection="column" alignItems="center" justifyContent="center">
         <img src="/images/mLogo.png" style={{ maxHeight: '100%', maxWidth: '100%' }} />
-        <Typography variant="h3" style={{ marginTop: '50px', borderBottom: '3px solid #000' }}>
+        <Typography variant="h4" style={{ fontWeight: 'bold', marginTop: '50px', borderBottom: '3px solid #000' }}>
           勉兄弟律师协会 &nbsp; میاں برادرز لا ایسوسی ایٹس ‬
         </Typography>
-        <Typography variant="h3">MIAN BROTHERS LAW ASSOCIATES</Typography>
+        <Typography variant="h4" style={{ fontWeight: 'bold' }}>
+          MIAN BROTHERS LAW ASSOCIATES
+        </Typography>
       </Box>
 
       <Typography variant="h1">Firm PROFILE</Typography>
@@ -49,9 +68,11 @@ const landingPage: React.FC = () => {
           <img src="/images/mLogo.png" width="100%" height="100%" />
         </WaterMarkBox>
         <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
-          <Typography variant="h3">ABOUT US</Typography>
+          <Typography variant="h4" style={{ fontWeight: 'bold' }}>
+            ABOUT US
+          </Typography>
         </Box>
-        <Typography variant="h6">
+        <Typography className={classes.contentTypo} variant="body1">
           Mian Brothers Law associate is a Firm that provides legal services to the client with seamless assistance. The
           co-partners of our ﬁrm are Mian Tahir Munir and Mian Bilal Munir. The Firm is founded to provide high-quality legal
           services to the client base in pursuit of its motto: Our Clients, Our priority. <br /> Our business revolves around the
@@ -75,9 +96,11 @@ const landingPage: React.FC = () => {
           <img src="/images/mLogo.png" width="100%" height="100%" />
         </WaterMarkBox>
         <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
-          <Typography variant="h3">WHY CHOOSE US</Typography>
+          <Typography variant="h4" style={{ fontWeight: 'bold' }}>
+            WHY CHOOSE US
+          </Typography>
         </Box>
-        <Typography variant="h6">
+        <Typography variant="body1" className={classes.contentTypo}>
           Mian Brothers Law Associates is one of the legal institutions in Pakistan and known for its high-end solutions either in
           legal or consultancy services. Both the local and regional clients are acquiring beneﬁts and achieve their desired
           results out of our legal assistance which is also within the same institutional framework. Our success is based on
@@ -96,9 +119,11 @@ const landingPage: React.FC = () => {
           <img src="/images/mLogo.png" width="100%" height="100%" />
         </WaterMarkBox>
         <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
-          <Typography variant="h3">OUR VISION</Typography>
+          <Typography variant="h4" style={{ fontWeight: 'bold' }}>
+            OUR VISION
+          </Typography>
         </Box>
-        <Typography variant="h6">
+        <Typography variant="body1" className={classes.visionTypo}>
           MiOur vision is to achieve objectives while adhering to the core values of honor, integrity, impartiality, objectivity,
           honesty, and credibility. We aimed at the rule of law and achieving the truth and fair justice with all honesty and
           credibility. We strive hard to defend the honor of our profession by adopting the highest degree of professionalism,
@@ -108,9 +133,11 @@ const landingPage: React.FC = () => {
         </Typography>
 
         <Box mt={5} display="flex" mb={5} flexDirection="column" alignItems="center" justifyContent="center">
-          <Typography variant="h3">OUR MISSION</Typography>
+          <Typography variant="h4" style={{ fontWeight: 'bold' }}>
+            OUR MISSION
+          </Typography>
         </Box>
-        <Typography variant="h6">
+        <Typography variant="body1" className={classes.visionTypo}>
           To lead the voice of truth in dealing with all sort of legal issues by maximum utilization of our knowledge, experience,
           and skills so that we can solve the most critical problems in minimum possible time in peaceful ways. Achieving the
           aspirations and interests of our customers and meeting all their requirements and needs. We provide special services
@@ -129,9 +156,11 @@ const landingPage: React.FC = () => {
           <img src="/images/mLogo.png" width="100%" height="100%" />
         </WaterMarkBox>
         <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
-          <Typography variant="h3">OUR SERVICES</Typography>
+          <Typography variant="h4" style={{ fontWeight: 'bold' }}>
+            OUR SERVICES
+          </Typography>
         </Box>
-        <Typography variant="h6">
+        <Typography variant="body1" className={classes.contentTypo}>
           Based on decades of law practice to the credit of Senior Partner and Team members, the Firm has established itself as an
           expert in litigating for the Oil and Gas, Banking, Intellectual Property Rights, Taxation, Contract drafting, Business
           Registration, SECP, Civil laws, Criminal laws, Constitutional laws, Environmental laws Construction, Divorce,
@@ -156,9 +185,11 @@ const landingPage: React.FC = () => {
           <img src="/images/mLogo.png" width="100%" height="100%" />
         </WaterMarkBox>
         <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
-          <Typography variant="h3">CIVIL AND CRIMINAL LITIGATION, ARBITRATION, DISPUTE RESOLUTION, APPEAL</Typography>
+          <Typography variant="h4" style={{ fontWeight: 'bold' }}>
+            CIVIL AND CRIMINAL LITIGATION, ARBITRATION, DISPUTE RESOLUTION, APPEAL
+          </Typography>
         </Box>
-        <Typography variant="h6">
+        <Typography variant="body1" className={classes.civilTypo}>
           Litigation in Civil or Criminal cases is aimed to get a fast and fair resolution of the matters. Our team will take care
           of a fair judgment when everything is said and done. We specialize in reliable legal solutions including:
           <br />
@@ -189,9 +220,11 @@ const landingPage: React.FC = () => {
           <img src="/images/mLogo.png" width="100%" height="100%" />
         </WaterMarkBox>
         <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
-          <Typography variant="h3">INSURANCE MATTERS</Typography>
+          <Typography variant="h4" style={{ fontWeight: 'bold' }}>
+            INSURANCE MATTERS
+          </Typography>
         </Box>
-        <Typography variant="h6">
+        <Typography variant="body1" className={classes.contentTypo}>
           Insurance is a system designed to protect an entity or institution or individual in the event of exposure to ﬁnancial
           losses caused by an accident. Insurance is really helpful in some cases. Its principle is based on paying a premium
           amount in order to return to the previous situation that was existed before incurring a loss. Due to the rapid growth to
@@ -210,9 +243,11 @@ const landingPage: React.FC = () => {
           <img src="/images/mLogo.png" width="100%" height="100%" />
         </WaterMarkBox>
         <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
-          <Typography variant="h3">CORPORATE AND COMMERCIAL ISSUES</Typography>
+          <Typography variant="h4" style={{ fontWeight: 'bold' }}>
+            CORPORATE AND COMMERCIAL ISSUES
+          </Typography>
         </Box>
-        <Typography variant="h6">
+        <Typography variant="body1" className={classes.contentTypo}>
           Commercial Law at the top of the pyramid of the different branches of law and commercial transactions is the backbone of
           economic life. Given that the business accelerated in the region and the daily changes that occur in the body of the
           judiciary, rhythm is diﬃcult for investors and companies to keep up with secretions commercial reality in terms of the
@@ -234,9 +269,11 @@ const landingPage: React.FC = () => {
           <img src="/images/mLogo.png" width="100%" height="100%" />
         </WaterMarkBox>
         <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
-          <Typography variant="h3">INTELLECTUAL PROPERTY RIGHTS (IPR) AND BUSINESS REGISTRATION</Typography>
+          <Typography variant="h4" style={{ fontWeight: 'bold' }}>
+            INTELLECTUAL PROPERTY RIGHTS (IPR) AND BUSINESS REGISTRATION
+          </Typography>
         </Box>
-        <Typography variant="h6">
+        <Typography variant="body1" className={classes.contentTypo}>
           We help business individuals in registering their business as Sole Proprietorship, Partnership, Limited Company
           Incorporation and afterward all their compliances . While dealing with SECP, Registrar of Firms, Chamber of commerce,
           and various other departments/Organizations. <br />
@@ -263,9 +300,11 @@ const landingPage: React.FC = () => {
           <img src="/images/mLogo.png" width="100%" height="100%" />
         </WaterMarkBox>
         <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
-          <Typography variant="h3">PROPERTY AND REAL ESTATE</Typography>
+          <Typography variant="h4" style={{ fontWeight: 'bold' }}>
+            PROPERTY AND REAL ESTATE
+          </Typography>
         </Box>
-        <Typography variant="h6">
+        <Typography variant="body1" className={classes.contentTypo}>
           Mian Brothers Law Associates property advising services has a wide range all across Pakistan and considers all the
           aspects related to the property industry. We maintained to produce the best of its services in the real estate legal
           space. The team of our legal representatives is qualiﬁed from Western as well as regional institutions that make them
@@ -290,9 +329,11 @@ const landingPage: React.FC = () => {
           <img src="/images/mLogo.png" width="100%" height="100%" />
         </WaterMarkBox>
         <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
-          <Typography variant="h3">BANKING SECTORS</Typography>
+          <Typography variant="h4" style={{ fontWeight: 'bold' }}>
+            BANKING SECTORS
+          </Typography>
         </Box>
-        <Typography variant="h6">
+        <Typography variant="body1" className={classes.contentTypo}>
           The banking sector is one of the most inﬂuential and vital ones in economic development by ﬁnancing investment, boosting
           domestic and foreign savings, contributing to the move forward with economic growth, and developing other sectors
           associated with it. The scope of our legal services includes a wide range of banking and ﬁnancial issues, notably:
@@ -308,9 +349,11 @@ const landingPage: React.FC = () => {
           <img src="/images/mLogo.png" width="100%" height="100%" />
         </WaterMarkBox>
         <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
-          <Typography variant="h3">TAXATION</Typography>
+          <Typography variant="h4" style={{ fontWeight: 'bold' }}>
+            TAXATION
+          </Typography>
         </Box>
-        <Typography variant="h6">
+        <Typography variant="body1" className={classes.contentTypo}>
           Being certiﬁed tax practitioners, taxation is the forte of our Firm. Our tax practice services include transaction
           planning and restructuring, proper review of accounting procedure, review of ﬁnal accounts for tax provision and
           computation, handling assessment proceedings, appeals from CIT to Honble High Court. Our tax professionals have a strong
@@ -335,9 +378,11 @@ const landingPage: React.FC = () => {
           <img src="/images/mLogo.png" width="100%" height="100%" />
         </WaterMarkBox>
         <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
-          <Typography variant="h3">LABOR DISPUTE</Typography>
+          <Typography variant="h4" style={{ fontWeight: 'bold' }}>
+            LABOR DISPUTE
+          </Typography>
         </Box>
-        <Typography variant="h6">
+        <Typography variant="body1" className={classes.contentTypo}>
           There are always some companies that do not follow the laws. When employees face unfair employment practices, our legal
           experts have the experience, ability, and dedication to face even the biggest employers in court. We regularly provide
           consultation to both businesses and employees to deal properly with their respective rights and duties under applicable
@@ -358,9 +403,11 @@ const landingPage: React.FC = () => {
           <img src="/images/mLogo.png" width="100%" height="100%" />
         </WaterMarkBox>
         <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
-          <Typography variant="h3">CONSULTANCY</Typography>
+          <Typography variant="h4" style={{ fontWeight: 'bold' }}>
+            CONSULTANCY
+          </Typography>
         </Box>
-        <Typography variant="h6">
+        <Typography variant="body1" className={classes.contentTypo}>
           Our team consists of highly dedicated and professional individuals with the entire team at Mian Brothers Law Associates
           adopts a sincere approach when it comes to career counselling, to assist patrons as far as selecting an appropriate
           route for academic development is concerned. <br />
@@ -376,9 +423,11 @@ const landingPage: React.FC = () => {
           <img src="/images/mLogo.png" width="100%" height="100%" />
         </WaterMarkBox>
         <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
-          <Typography variant="h3">WELFARE ORGANIZATIONS</Typography>
+          <Typography variant="h4" style={{ fontWeight: 'bold' }}>
+            WELFARE ORGANIZATIONS
+          </Typography>
         </Box>
-        <Typography variant="h6">
+        <Typography variant="body1" className={classes.contentTypo}>
           Advisory, Planning, and establishment of charitable organizations, trust, and Will. For non-proﬁt organizations and
           trustees, we provide thorough legal services. To people who are looking for a legal way to accomplish the non-proﬁt
           organizations, we are more than willing to help.
@@ -405,15 +454,19 @@ const landingPage: React.FC = () => {
           <img src="/images/mLogo.png" width="100%" height="100%" />
         </WaterMarkBox>
         <Box display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-          <Typography variant="h3">OUR PARTNERS</Typography>
+          <Typography variant="h4" style={{ fontWeight: 'bold' }}>
+            OUR PARTNERS
+          </Typography>
         </Box>
 
         <Grid container>
           <Grid item xs={5}>
             <Box display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-              <Typography variant="h3">Mian Tahir Munir</Typography>
+              <Typography variant="h4" style={{ fontWeight: 'bold' }}>
+                Mian Tahir Munir
+              </Typography>
             </Box>
-            <Typography variant="h6">
+            <Typography variant="body1" className={classes.contentTypo}>
               Is our founder and Managing Partner. He graduated from the University of Management and Technology. He was admitted
               and enrolled as an advocate and solicitor of the High Court of Lahore in 5014. He is a life member of the Lahore Tax
               Bar Association. He has extensive experience in civil, criminal, family, banking, ﬁnance, property, and real estate
@@ -441,9 +494,11 @@ const landingPage: React.FC = () => {
           </Grid>
           <Grid item xs={5}>
             <Box display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-              <Typography variant="h3">Mian Bilal Munir</Typography>
+              <Typography variant="h4" style={{ fontWeight: 'bold' }}>
+                Mian Bilal Munir
+              </Typography>
             </Box>
-            <Typography variant="h6">
+            <Typography variant="body1" className={classes.contentTypo}>
               Is our founder and Partner. He graduated from the University of Punjab in Commerce and holds a Bachelors of Law
               degree and a Masters of Law degree from the University of Punjab. He is admitted and enrolled as an advocate and
               solicitor of the Lahore High Court Lahore and Tax Bar Association. He has extensive experience in all aspects of
@@ -454,7 +509,9 @@ const landingPage: React.FC = () => {
               matters.
             </Typography>
             <br />
-            <Typography variant="h6">
+            <br />
+            <br />
+            <Typography variant="body1" className={classes.contentTypo}>
               Some of his involvements are:
               <ul>
                 <li>Registrar for Various Arbitration Proceedings</li>
@@ -470,7 +527,7 @@ const landingPage: React.FC = () => {
 
       <Box mt={10}>
         <Box style={{ backgroundColor: '#0A1830' }}>
-          <Typography variant="h3" style={{ paddingTop: '30px', textAlign: 'center', color: '#fff' }}>
+          <Typography variant="h4" style={{ paddingTop: '30px', textAlign: 'center', color: '#fff' }}>
             Presence of our legal team
           </Typography>
           <Box p={3} display="flex" justifyContent="center">
@@ -495,7 +552,7 @@ const landingPage: React.FC = () => {
               height: '95vh'
             }}>
             <Box pt={20}>
-              <Typography variant="h3" style={{ textAlign: 'center', color: '#fff' }}>
+              <Typography variant="h4" style={{ textAlign: 'center', color: '#fff' }}>
                 CONTACT US
               </Typography>
               <Box pl={10}>
@@ -513,7 +570,7 @@ const landingPage: React.FC = () => {
                       }}>
                       <CallIcon style={{ color: '#fff' }} />
                     </Box>
-                    <Typography variant="h6" style={{ textAlign: 'center', color: '#fff' }}>
+                    <Typography variant="body1" style={{ textAlign: 'center', color: '#fff' }}>
                       +92 301-11116369
                     </Typography>
                   </Box>
@@ -532,7 +589,7 @@ const landingPage: React.FC = () => {
                       }}>
                       <PinDropIcon style={{ color: '#fff' }} />
                     </Box>
-                    <Typography variant="h6" style={{ textAlign: 'center', color: '#fff' }}>
+                    <Typography variant="body1" style={{ textAlign: 'center', color: '#fff' }}>
                       Al-Meraj Arcade, Plot No.76 Chuburji, Lahore
                     </Typography>
                   </Box>
@@ -551,7 +608,7 @@ const landingPage: React.FC = () => {
                       }}>
                       <EmailIcon style={{ color: '#fff' }} />
                     </Box>
-                    <Typography variant="h6" style={{ textAlign: 'center', color: '#fff' }}>
+                    <Typography variant="body1" style={{ textAlign: 'center', color: '#fff' }}>
                       mbla.live@gmail.com
                     </Typography>
                   </Box>
@@ -570,7 +627,7 @@ const landingPage: React.FC = () => {
                       }}>
                       <LanguageIcon style={{ color: '#fff' }} />
                     </Box>
-                    <Typography variant="h6" style={{ textAlign: 'center', color: '#fff' }}>
+                    <Typography variant="body1" style={{ textAlign: 'center', color: '#fff' }}>
                       www.mbla.live
                     </Typography>
                   </Box>
