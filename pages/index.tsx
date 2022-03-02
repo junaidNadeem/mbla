@@ -1,6 +1,6 @@
 import React from 'react'
 import { hot } from 'react-hot-loader'
-// import { useMediaQuery } from 'react-responsive'
+import { useMediaQuery } from 'react-responsive'
 
 // material ui imports
 import { Box, Divider, Grid, Typography, styled, makeStyles } from '@material-ui/core'
@@ -8,17 +8,6 @@ import CallIcon from '@material-ui/icons/Call'
 import PinDropIcon from '@material-ui/icons/PinDrop'
 import EmailIcon from '@material-ui/icons/Email'
 import LanguageIcon from '@material-ui/icons/Language'
-const WaterMarkBox = styled(Box)({
-  position: 'absolute',
-  zIndex: -1,
-  display: 'flex',
-  left: '7.5vw',
-  top: 0,
-  bottom: 2,
-  opacity: 0.1,
-  width: '80vw',
-  height: 'auto'
-})
 
 const MainBox = styled(Box)({
   position: 'relative',
@@ -27,19 +16,25 @@ const MainBox = styled(Box)({
 })
 
 const landingPage: React.FC = () => {
-  // const isMobile = useMediaQuery({ query: '(max-width: 800px)' })
+  const isMobile = useMediaQuery({ query: '(max-width: 800px)' })
+  const isLargeLaptop = useMediaQuery({ query: '(max-width: 1500px)' })
+  const isSmallLaptop = useMediaQuery({ query: '(max-width: 1100px)' })
 
+  const WaterMarkBox = styled(Box)({
+    position: 'absolute',
+    zIndex: -1,
+    display: 'flex',
+    // left: !isMobile ? '7.5vw' : !isLaptop ? '8.5vw' : 0,
+    left: isMobile ? '35%' : isSmallLaptop ? 115 : isLargeLaptop ? 155 : 0,
+    top: !isMobile ? 0 : 30,
+    bottom: 2,
+    opacity: 0.1,
+    width: !isMobile ? '80vw' : '30vw',
+    height: !isMobile ? 'auto' : '40vw',
+    maxWidth: '1440px'
+  })
   const classes = makeStyles(() => {
     return {
-      // contentTypo: {
-      //   height: isMobile ? 'auto' : '300px'
-      // },
-      // visionTypo: {
-      //   height: isMobile ? 'auto' : '150px'
-      // },
-      // civilTypo: {
-      //   height: isMobile ? 'auto' : '400px'
-      // }
       contentTypo: {
         height: 'auto'
       },
