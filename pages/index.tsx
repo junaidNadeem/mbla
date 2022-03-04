@@ -25,12 +25,12 @@ const landingPage: React.FC = () => {
     zIndex: -1,
     display: 'flex',
     // left: !isMobile ? '7.5vw' : !isLaptop ? '8.5vw' : 0,
-    left: isMobile ? '35%' : isSmallLaptop ? 115 : isLargeLaptop ? 155 : 0,
+    left: isMobile ? '35%' : isSmallLaptop ? '265px' : isLargeLaptop ? '470px' : '450px',
     top: !isMobile ? 0 : 30,
     bottom: 2,
     opacity: 0.1,
-    width: !isMobile ? '80vw' : '30vw',
-    height: !isMobile ? 'auto' : '40vw',
+    width: !isMobile ? '500px' : '30vw',
+    height: !isMobile ? '300px' : '40vw',
     maxWidth: '1440px'
   })
   const classes = makeStyles(() => {
