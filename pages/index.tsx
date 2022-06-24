@@ -60,7 +60,7 @@ const landingPage: React.FC = () => {
         <Box mt={2}>
           <img src="/images/image1.png" width="100%" />
         </Box>
-        <Box p={'40px'} display="flex" flexDirection="column" alignItems="center" justifyContent="center">
+        <Box display="flex" flexDirection="column" alignItems="center" justifyContent="center">
           <img src="/images/mLogo.png" width="80%" />
           <Typography variant="h4" style={{ fontWeight: 'bold', marginTop: '50px', borderBottom: '3px solid #000' }}>
             勉兄弟律师协会 &nbsp; میاں برادرز لا ایسوسی ایٹس ‬
