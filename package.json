@@ -1,6 +1,6 @@
 {
   "name": "BTG-frontend",
-  "homepage": "http://jdNadeem.github.io/mbla",
+  "homepage": "http://junaidNadeem.github.io/mbla",
   "version": "0.1.0",
   "description": "React, Webpack (with Hot Module Replacement), Typescript and Babel.",
   "private": true,
@@ -16,7 +16,7 @@
   ],
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d out",
     "clean:out": "rimraf out/*",
     "lint": "eslint \"./**/*.{ts,tsx,css,js,json}\" --quiet",
     "lint:fix": "eslint \"./**/*.{ts,tsx,css,js,json}\" --quiet --fix",
@@ -41,6 +41,7 @@
   "devDependencies": {
     "@types/node": "^14.14.31",
     "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.2",
     "@types/react-redux": "^7.1.16",
     "@types/react-responsive": "^8.0.2",
     "@types/react-router-dom": "^5.1.7",
@@ -99,5 +100,9 @@
     "redux-persist": "^6.0.0",
     "serve": "^11.3.2",
     "uuid": "^8.3.2"
+  },
+  "resolutions": {
+    "@types/react": "17.0.14",
+    "@types/react-dom": "17.0.14"
   }
 }

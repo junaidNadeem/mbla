@@ -46,10 +46,10 @@ const landingPage: React.FC = () => {
   return (
     <React.Fragment>
       <Box>
-        <img src="/images/image1.png" width="100%" height="100%" />
+        <img src="images/image1.png" width="100%" height="100%" />
       </Box>
       <Box p={'40px'} display="flex" mt={8} flexDirection="column" alignItems="center" justifyContent="center">
-        <img src="/images/mLogo.png" style={{ maxHeight: '100%', maxWidth: '100%' }} />
+        <img src="images/mLogo.png" style={{ maxHeight: '100%', maxWidth: '100%' }} />
         <Typography variant="h4" style={{ fontWeight: 'bold', marginTop: '50px', borderBottom: '3px solid #000' }}>
           勉兄弟律师协会 &nbsp; میاں برادرز لا ایسوسی ایٹس ‬
         </Typography>
@@ -61,11 +61,11 @@ const landingPage: React.FC = () => {
       <Typography variant="h1">Firm PROFILE</Typography>
 
       <Box mt={5}>
-        <img src="/images/image5.png" width="100%" height="100%" />
+        <img src="images/image5.png" width="100%" height="100%" />
       </Box>
       <MainBox>
         <WaterMarkBox>
-          <img src="/images/mLogo.png" width="100%" height="100%" />
+          <img src="images/mLogo.png" width="100%" height="100%" />
         </WaterMarkBox>
         <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
           <Typography variant="h4" style={{ fontWeight: 'bold' }}>
@@ -89,11 +89,11 @@ const landingPage: React.FC = () => {
       </MainBox>
 
       <Box mt={5}>
-        <img src="/images/image3.png" width="100%" height="100%" />
+        <img src="images/image3.png" width="100%" height="100%" />
       </Box>
       <MainBox>
         <WaterMarkBox>
-          <img src="/images/mLogo.png" width="100%" height="100%" />
+          <img src="images/mLogo.png" width="100%" height="100%" />
         </WaterMarkBox>
         <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
           <Typography variant="h4" style={{ fontWeight: 'bold' }}>
@@ -112,11 +112,11 @@ const landingPage: React.FC = () => {
       </MainBox>
 
       <Box mt={5}>
-        <img src="/images/image4.png" width="100%" height="100%" />
+        <img src="images/image4.png" width="100%" height="100%" />
       </Box>
       <MainBox>
         <WaterMarkBox>
-          <img src="/images/mLogo.png" width="100%" height="100%" />
+          <img src="images/mLogo.png" width="100%" height="100%" />
         </WaterMarkBox>
         <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
           <Typography variant="h4" style={{ fontWeight: 'bold' }}>
@@ -148,12 +148,12 @@ const landingPage: React.FC = () => {
       </MainBox>
 
       <Box mt={5}>
-        <img src="/images/image5.png" width="100%" height="100%" />
+        <img src="images/image5.png" width="100%" height="100%" />
       </Box>
 
       <MainBox>
         <WaterMarkBox>
-          <img src="/images/mLogo.png" width="100%" height="100%" />
+          <img src="images/mLogo.png" width="100%" height="100%" />
         </WaterMarkBox>
         <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
           <Typography variant="h4" style={{ fontWeight: 'bold' }}>
@@ -178,11 +178,11 @@ const landingPage: React.FC = () => {
       </MainBox>
 
       <Box mt={5}>
-        <img src="/images/image6.png" width="100%" height="100%" />
+        <img src="images/image6.png" width="100%" height="100%" />
       </Box>
       <MainBox>
         <WaterMarkBox>
-          <img src="/images/mLogo.png" width="100%" height="100%" />
+          <img src="images/mLogo.png" width="100%" height="100%" />
         </WaterMarkBox>
         <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
           <Typography variant="h4" style={{ fontWeight: 'bold' }}>
@@ -213,11 +213,11 @@ const landingPage: React.FC = () => {
       </MainBox>
 
       <Box mt={5}>
-        <img src="/images/image7.png" width="100%" height="100%" />
+        <img src="images/image7.png" width="100%" height="100%" />
       </Box>
       <MainBox>
         <WaterMarkBox>
-          <img src="/images/mLogo.png" width="100%" height="100%" />
+          <img src="images/mLogo.png" width="100%" height="100%" />
         </WaterMarkBox>
         <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
           <Typography variant="h4" style={{ fontWeight: 'bold' }}>
@@ -236,11 +236,11 @@ const landingPage: React.FC = () => {
       </MainBox>
 
       <Box mt={5}>
-        <img src="/images/image8.png" width="100%" height="100%" />
+        <img src="images/image8.png" width="100%" height="100%" />
       </Box>
       <MainBox>
         <WaterMarkBox>
-          <img src="/images/mLogo.png" width="100%" height="100%" />
+          <img src="images/mLogo.png" width="100%" height="100%" />
         </WaterMarkBox>
         <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
           <Typography variant="h4" style={{ fontWeight: 'bold' }}>
@@ -262,11 +262,11 @@ const landingPage: React.FC = () => {
         </Typography>
       </MainBox>
       <Box mt={5}>
-        <img src="/images/image9.png" width="100%" height="100%" />
+        <img src="images/image9.png" width="100%" height="100%" />
       </Box>
       <MainBox>
         <WaterMarkBox>
-          <img src="/images/mLogo.png" width="100%" height="100%" />
+          <img src="images/mLogo.png" width="100%" height="100%" />
         </WaterMarkBox>
         <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
           <Typography variant="h4" style={{ fontWeight: 'bold' }}>
@@ -293,11 +293,11 @@ const landingPage: React.FC = () => {
         </Typography>
       </MainBox>
       <Box mt={5}>
-        <img src="/images/image10.png" width="100%" height="100%" />
+        <img src="images/image10.png" width="100%" height="100%" />
       </Box>
       <MainBox>
         <WaterMarkBox>
-          <img src="/images/mLogo.png" width="100%" height="100%" />
+          <img src="images/mLogo.png" width="100%" height="100%" />
         </WaterMarkBox>
         <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
           <Typography variant="h4" style={{ fontWeight: 'bold' }}>
@@ -322,11 +322,11 @@ const landingPage: React.FC = () => {
       </MainBox>
 
       <Box mt={5}>
-        <img src="/images/image11.png" width="100%" height="100%" />
+        <img src="images/image11.png" width="100%" height="100%" />
       </Box>
       <MainBox>
         <WaterMarkBox>
-          <img src="/images/mLogo.png" width="100%" height="100%" />
+          <img src="images/mLogo.png" width="100%" height="100%" />
         </WaterMarkBox>
         <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
           <Typography variant="h4" style={{ fontWeight: 'bold' }}>
@@ -342,11 +342,11 @@ const landingPage: React.FC = () => {
         </Typography>
       </MainBox>
       <Box mt={5}>
-        <img src="/images/image15.png" width="100%" height="100%" />
+        <img src="images/image15.png" width="100%" height="100%" />
       </Box>
       <MainBox>
         <WaterMarkBox>
-          <img src="/images/mLogo.png" width="100%" height="100%" />
+          <img src="images/mLogo.png" width="100%" height="100%" />
         </WaterMarkBox>
         <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
           <Typography variant="h4" style={{ fontWeight: 'bold' }}>
@@ -371,11 +371,11 @@ const landingPage: React.FC = () => {
         </Typography>
       </MainBox>
       <Box mt={5}>
-        <img src="/images/image13.png" width="100%" height="100%" />
+        <img src="images/image13.png" width="100%" height="100%" />
       </Box>
       <MainBox>
         <WaterMarkBox>
-          <img src="/images/mLogo.png" width="100%" height="100%" />
+          <img src="images/mLogo.png" width="100%" height="100%" />
         </WaterMarkBox>
         <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
           <Typography variant="h4" style={{ fontWeight: 'bold' }}>
@@ -396,11 +396,11 @@ const landingPage: React.FC = () => {
         </Typography>
       </MainBox>
       <Box mt={5}>
-        <img src="/images/image14.png" width="100%" height="100%" />
+        <img src="images/image14.png" width="100%" height="100%" />
       </Box>
       <MainBox>
         <WaterMarkBox>
-          <img src="/images/mLogo.png" width="100%" height="100%" />
+          <img src="images/mLogo.png" width="100%" height="100%" />
         </WaterMarkBox>
         <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
           <Typography variant="h4" style={{ fontWeight: 'bold' }}>
@@ -416,11 +416,11 @@ const landingPage: React.FC = () => {
         </Typography>
       </MainBox>
       <Box mt={5}>
-        <img src="/images/image15.png" width="100%" height="100%" />
+        <img src="images/image15.png" width="100%" height="100%" />
       </Box>
       <MainBox>
         <WaterMarkBox>
-          <img src="/images/mLogo.png" width="100%" height="100%" />
+          <img src="images/mLogo.png" width="100%" height="100%" />
         </WaterMarkBox>
         <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
           <Typography variant="h4" style={{ fontWeight: 'bold' }}>
@@ -437,13 +437,13 @@ const landingPage: React.FC = () => {
         <Grid container>
           <Grid item xs={5}>
             <Box>
-              <img src="/images/p1.png" width="100%" height="100%" />
+              <img src="images/p1.png" width="100%" height="100%" />
             </Box>
           </Grid>
           <Grid item xs={2} />
           <Grid item xs={5}>
             <Box>
-              <img src="/images/p2.png" width="100%" height="100%" />
+              <img src="images/p2.png" width="100%" height="100%" />
             </Box>
           </Grid>
         </Grid>
@@ -451,7 +451,7 @@ const landingPage: React.FC = () => {
 
       <MainBox>
         <WaterMarkBox>
-          <img src="/images/mLogo.png" width="100%" height="100%" />
+          <img src="images/mLogo.png" width="100%" height="100%" />
         </WaterMarkBox>
         <Box display="flex" flexDirection="column" alignItems="center" justifyContent="center">
           <Typography variant="h4" style={{ fontWeight: 'bold' }}>
@@ -531,22 +531,22 @@ const landingPage: React.FC = () => {
             Presence of our legal team
           </Typography>
           <Box p={3} display="flex" justifyContent="center">
-            <img src="/images/map.png" alt="map" width="100%" height="100%" />
+            <img src="images/map.png" alt="map" width="100%" height="100%" />
           </Box>
           <Box mt={5}>
-            <img src="/images/lightLogo.png" alt="LOGO" width="10%" height="10%" />
+            <img src="images/lightLogo.png" alt="LOGO" width="10%" height="10%" />
           </Box>
         </Box>
       </Box>
 
       <Box mt={10}>
         <Box mt={5}>
-          <img src="/images/image16.png" width="100%" height="100%" />
+          <img src="images/image16.png" width="100%" height="100%" />
         </Box>
         <Box mt={2}>
           <Box
             style={{
-              backgroundImage: `url(${'/images/image17.png'})`,
+              backgroundImage: `url(${'images/image17.png'})`,
               backgroundRepeat: 'no-repeat',
               backgroundSize: '100% 100%',
               height: '95vh'
