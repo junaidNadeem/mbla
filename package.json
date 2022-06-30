@@ -1,5 +1,6 @@
 {
   "name": "BTG-frontend",
+  "homepage": "http://jdNadeem.github.io/mbla",
   "version": "0.1.0",
   "description": "React, Webpack (with Hot Module Replacement), Typescript and Babel.",
   "private": true,
@@ -14,6 +15,8 @@
     "boilerplate"
   ],
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "clean:out": "rimraf out/*",
     "lint": "eslint \"./**/*.{ts,tsx,css,js,json}\" --quiet",
     "lint:fix": "eslint \"./**/*.{ts,tsx,css,js,json}\" --quiet --fix",
@@ -49,6 +52,7 @@
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.21.4",
     "express": "^4.17.1",
+    "gh-pages": "^4.0.0",
     "husky": "^4.3.6",
     "lint-staged": ">=10",
     "node-sass": "^4.14.1",
