@@ -57,10 +57,10 @@ const landingPage: React.FC = () => {
         </Box>
         <Box display="flex" flexDirection="column" alignItems="center" justifyContent="center">
           <img src="images/mLogo.png" width="80%" />
-          <Typography variant="h3" style={{ fontWeight: 'bold', marginTop: '50px', borderBottom: '3px solid #000' }}>
+          <Typography variant="h4" style={{ fontWeight: 'bold', marginTop: '50px', borderBottom: '3px solid #000' }}>
             勉兄弟律师协会 &nbsp; میاں برادرز لا ایسوسی ایٹس ‬
           </Typography>
-          <Typography variant="h3" style={{ fontWeight: 'bold' }}>
+          <Typography variant="h4" style={{ fontWeight: 'bold' }}>
             MIAN BROTHERS LAW ASSOCIATES
           </Typography>
         </Box>
@@ -75,7 +75,7 @@ const landingPage: React.FC = () => {
             <img src="images/mLogo.png" width="100%" height="100%" />
           </WaterMarkBox>
           <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
-            <Typography variant="h3" style={{ fontWeight: 'bold' }}>
+            <Typography variant="h4" style={{ fontWeight: 'bold' }}>
               ABOUT US
             </Typography>
           </Box>
@@ -103,7 +103,7 @@ const landingPage: React.FC = () => {
             <img src="images/mLogo.png" width="100%" height="100%" />
           </WaterMarkBox>
           <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
-            <Typography variant="h3" style={{ fontWeight: 'bold' }}>
+            <Typography variant="h4" style={{ fontWeight: 'bold' }}>
               WHY CHOOSE US
             </Typography>
           </Box>
@@ -126,7 +126,7 @@ const landingPage: React.FC = () => {
             <img src="images/mLogo.png" width="100%" height="100%" />
           </WaterMarkBox>
           <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
-            <Typography variant="h3" style={{ fontWeight: 'bold' }}>
+            <Typography variant="h4" style={{ fontWeight: 'bold' }}>
               OUR VISION
             </Typography>
           </Box>
@@ -140,7 +140,7 @@ const landingPage: React.FC = () => {
           </Typography>
 
           <Box mt={5} display="flex" mb={5} flexDirection="column" alignItems="center" justifyContent="center">
-            <Typography variant="h3" style={{ fontWeight: 'bold' }}>
+            <Typography variant="h4" style={{ fontWeight: 'bold' }}>
               OUR MISSION
             </Typography>
           </Box>
@@ -163,7 +163,7 @@ const landingPage: React.FC = () => {
             <img src="images/mLogo.png" width="100%" height="100%" />
           </WaterMarkBox>
           <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
-            <Typography variant="h3" style={{ fontWeight: 'bold' }}>
+            <Typography variant="h4" style={{ fontWeight: 'bold' }}>
               OUR SERVICES
             </Typography>
           </Box>
@@ -192,7 +192,7 @@ const landingPage: React.FC = () => {
             <img src="images/mLogo.png" width="100%" height="100%" />
           </WaterMarkBox>
           <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
-            <Typography variant="h3" style={{ fontWeight: 'bold' }}>
+            <Typography variant="h4" style={{ fontWeight: 'bold' }}>
               CIVIL AND CRIMINAL LITIGATION, ARBITRATION, DISPUTE RESOLUTION, APPEAL
             </Typography>
           </Box>
@@ -227,7 +227,7 @@ const landingPage: React.FC = () => {
             <img src="images/mLogo.png" width="100%" height="100%" />
           </WaterMarkBox>
           <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
-            <Typography variant="h3" style={{ fontWeight: 'bold' }}>
+            <Typography variant="h4" style={{ fontWeight: 'bold' }}>
               INSURANCE MATTERS
             </Typography>
           </Box>
@@ -250,7 +250,7 @@ const landingPage: React.FC = () => {
             <img src="images/mLogo.png" width="100%" height="100%" />
           </WaterMarkBox>
           <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
-            <Typography variant="h3" style={{ fontWeight: 'bold' }}>
+            <Typography variant="h4" style={{ fontWeight: 'bold' }}>
               CORPORATE AND COMMERCIAL ISSUES
             </Typography>
           </Box>
@@ -276,7 +276,7 @@ const landingPage: React.FC = () => {
             <img src="images/mLogo.png" width="100%" height="100%" />
           </WaterMarkBox>
           <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
-            <Typography variant="h3" style={{ fontWeight: 'bold' }}>
+            <Typography variant="h4" style={{ fontWeight: 'bold' }}>
               INTELLECTUAL PROPERTY RIGHTS (IPR) AND BUSINESS REGISTRATION
             </Typography>
           </Box>
@@ -307,7 +307,7 @@ const landingPage: React.FC = () => {
             <img src="images/mLogo.png" width="100%" height="100%" />
           </WaterMarkBox>
           <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
-            <Typography variant="h3" style={{ fontWeight: 'bold' }}>
+            <Typography variant="h4" style={{ fontWeight: 'bold' }}>
               PROPERTY AND REAL ESTATE
             </Typography>
           </Box>
@@ -336,7 +336,7 @@ const landingPage: React.FC = () => {
             <img src="images/mLogo.png" width="100%" height="100%" />
           </WaterMarkBox>
           <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
-            <Typography variant="h3" style={{ fontWeight: 'bold' }}>
+            <Typography variant="h4" style={{ fontWeight: 'bold' }}>
               BANKING SECTORS
             </Typography>
           </Box>
@@ -356,7 +356,7 @@ const landingPage: React.FC = () => {
             <img src="images/mLogo.png" width="100%" height="100%" />
           </WaterMarkBox>
           <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
-            <Typography variant="h3" style={{ fontWeight: 'bold' }}>
+            <Typography variant="h4" style={{ fontWeight: 'bold' }}>
               TAXATION
             </Typography>
           </Box>
@@ -385,7 +385,7 @@ const landingPage: React.FC = () => {
             <img src="images/mLogo.png" width="100%" height="100%" />
           </WaterMarkBox>
           <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
-            <Typography variant="h3" style={{ fontWeight: 'bold' }}>
+            <Typography variant="h4" style={{ fontWeight: 'bold' }}>
               LABOR DISPUTE
             </Typography>
           </Box>
@@ -410,7 +410,7 @@ const landingPage: React.FC = () => {
             <img src="images/mLogo.png" width="100%" height="100%" />
           </WaterMarkBox>
           <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
-            <Typography variant="h3" style={{ fontWeight: 'bold' }}>
+            <Typography variant="h4" style={{ fontWeight: 'bold' }}>
               CONSULTANCY
             </Typography>
           </Box>
@@ -430,7 +430,7 @@ const landingPage: React.FC = () => {
             <img src="images/mLogo.png" width="100%" height="100%" />
           </WaterMarkBox>
           <Box display="flex" mt={10} mb={5} flexDirection="column" alignItems="center" justifyContent="center">
-            <Typography variant="h3" style={{ fontWeight: 'bold' }}>
+            <Typography variant="h4" style={{ fontWeight: 'bold' }}>
               WELFARE ORGANIZATIONS
             </Typography>
           </Box>
@@ -461,7 +461,7 @@ const landingPage: React.FC = () => {
             <img src="images/mLogo.png" width="100%" height="100%" />
           </WaterMarkBox>
           <Box display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-            <Typography variant="h3" style={{ fontWeight: 'bold' }}>
+            <Typography variant="h4" style={{ fontWeight: 'bold' }}>
               OUR PARTNERS
             </Typography>
             <br />
@@ -470,7 +470,7 @@ const landingPage: React.FC = () => {
           <Grid container>
             <Grid item md={5}>
               <Box display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-                <Typography variant="h3" style={{ fontWeight: 'bold' }}>
+                <Typography variant="h4" style={{ fontWeight: 'bold' }}>
                   Mian Tahir Munir
                   <br /> <br />
                 </Typography>
@@ -499,7 +499,7 @@ const landingPage: React.FC = () => {
             </Grid>
             <Grid item md={5}>
               <Box display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-                <Typography variant="h3" style={{ fontWeight: 'bold' }}>
+                <Typography variant="h4" style={{ fontWeight: 'bold' }}>
                   Mian Bilal Munir
                   <br /> <br />
                 </Typography>
@@ -534,7 +534,7 @@ const landingPage: React.FC = () => {
 
         <Box mt={10}>
           <Box style={{ backgroundColor: '#0A1830' }}>
-            <Typography variant="h3" style={{ paddingTop: '30px', textAlign: 'center', color: '#fff' }}>
+            <Typography variant="h4" style={{ paddingTop: '30px', textAlign: 'center', color: '#fff' }}>
               Presence of our legal team
             </Typography>
             <Box p={3} display="flex" justifyContent="center">
@@ -559,7 +559,7 @@ const landingPage: React.FC = () => {
                 height: '95vh'
               }}>
               <Box pt={20}>
-                <Typography variant="h3" style={{ textAlign: 'center', color: '#fff' }}>
+                <Typography variant="h4" style={{ textAlign: 'center', color: '#fff' }}>
                   CONTACT US
                 </Typography>
                 <Box pl={10}>
